@@ -19,11 +19,11 @@ use Illuminate\Support\Str;
 
 $factory->define(User::class, function (Faker $faker) {
     return [
-        'first_name' => $faker->firstName,
-        'last_name' => $faker->lastName,
-        'email' => $faker->unique()->safeEmail,
-        'password' => \Illuminate\Support\Facades\Hash::make(Str::random(32)),
-        'address' => $faker->address,
+        'first_name'    => $faker->firstName,
+        'last_name'     => $faker->lastName,
+        'email'         => $faker->unique()->safeEmail,
+        'password'      => \Illuminate\Support\Facades\Hash::make(Str::random(32)),
+        'address'       => $faker->address,
         'date_of_birth' => $faker->dateTimeBetween('-50 years', '-19 years'),
     ];
 });
