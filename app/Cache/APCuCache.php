@@ -39,7 +39,6 @@ class APCuCache implements CacheInterface
      *
      * @param string $key
      * @param mixed $value
-     * @param int|null $ttl
      */
     public function store(string $key, $value): void
     {
