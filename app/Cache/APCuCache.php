@@ -16,9 +16,9 @@ class APCuCache implements CacheInterface
      */
     private $prefix;
 
-    public function __construct(string $prefix = null)
+    public function __construct(string $prefix)
     {
-        $this->prefix = $prefix ?: substr(sha1($_SERVER['DOCUMENT_ROOT']), 0, 8) . ':';
+        $this->prefix = $prefix;
     }
 
     /**

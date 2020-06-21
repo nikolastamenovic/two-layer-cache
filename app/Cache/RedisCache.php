@@ -8,7 +8,6 @@
 
 namespace App\Cache;
 
-
 use Illuminate\Support\Facades\Redis;
 
 class RedisCache implements CacheInterface
