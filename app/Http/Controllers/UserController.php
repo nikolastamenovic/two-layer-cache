@@ -73,6 +73,8 @@ class UserController extends Controller
     }
 
     /**
+     * Update the specified resource.
+     *
      * @param UserUpdateRequest $request
      * @param User $user
      * @return \Illuminate\Http\Response
@@ -91,6 +93,8 @@ class UserController extends Controller
     }
 
     /**
+     * Delete specified resource.
+     *
      * @param User $user
      * @return \Illuminate\Http\Response
      */
